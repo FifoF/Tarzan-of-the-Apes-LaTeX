@@ -1,0 +1,24 @@
+% !TeX TS-program = LuaLaTeX
+% !TeX encoding = UTF-8
+
+\documentclass[]{novel}
+\usepackage[balanced]{lua-widow-control}
+%\usepackage{lua-widow-control}
+\input{content/preamble}
+%\input{hand-tuning}\ShowLoosenessHelp
+
+\begin{document}
+\input{content/typography}
+\frontmatter
+%\microtypesetup{activate=false}
+\input{content/titlepage}
+\input{content/copyrightpage}
+\input{content/tocpage}
+
+\mainmatter
+
+\include{content/chapter1}
+
+\include{content/backmatter}
+
+\end{document}
